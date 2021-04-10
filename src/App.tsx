@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import AntdCheckbox from './components/AntdCheckbox'
+import Header from './components/Header'
+import Recipe from './backend/helpers/recipe';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const pascha = '../public/recipes/pascha.json';
+const recipe = new Recipe(pascha);
+
+
+
+const App = () => {
+	return (
+		<>
+			<Header text={recipe.getName()}/>
+			{recipe.getIngredients().forEach(ingredient => {
+				<AntdCheckbox text={ingredient} />
+			})}			
+		</>
+	);
 }
 
 export default App;
