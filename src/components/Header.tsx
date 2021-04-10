@@ -1,19 +1,9 @@
-import PropTypes from 'prop-types';
-
-const Header = ({title}) => {
+const Header = ({text}: {text: string}) => {
 	return (
 		<header>
-			<h1>{title}</h1>
+			<h1>{text}</h1>
 		</header>
 	)
-}
-
-Header.defaultProps = {
-	title: 'PRZEPIS'
-}
-
-Header.propTypes = {
-	title: PropTypes.string.isRequired,
 }
 
 export default Header;
