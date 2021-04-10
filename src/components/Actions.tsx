@@ -3,7 +3,7 @@ import React from 'react'
 
 const { Step } = Steps;
 
-const Tasks = (steps: Array<{title: string; content: string}>) => {
+const Actions = (steps: Array<{title: string; content: string}>) => {
 
 
 	const [current, setCurrent] = React.useState(0);
@@ -45,4 +45,4 @@ const Tasks = (steps: Array<{title: string; content: string}>) => {
 	);
 }
 
-export default Tasks
+export default Actions
