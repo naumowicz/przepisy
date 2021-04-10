@@ -1,10 +1,7 @@
-
 import 'antd/dist/antd.css';
-import './index.css';
 import { Checkbox } from 'antd';
 
-
-const AntdCheckbox = ({text}) => {
+const AntdCheckbox = ({text}: {text: string}) => {
 	return (
 		<div>
 			<Checkbox>{text}</Checkbox>
