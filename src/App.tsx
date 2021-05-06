@@ -13,6 +13,9 @@ const App = () => {
 					<Route exact path='/'>
 						<List />
 					</Route>
+					<Route exact path='/przepisy'>
+						<List />
+					</Route>
 					<Route path="/*">
 						<Recipe />
 					</Route>
