@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,KACC,6BACD,CAEA,GACC,YAAa,CACb,kBACD,CAEA,MACC,eAAgB,CAChB,gBACD","file":"main.aeb591d5.chunk.css","sourcesContent":["body {\r\n\tfont-family: 'Lato', sans-serif;\r\n}\r\n\r\nh1 {\r\n\tdisplay: grid;\r\n\tplace-items: center;\r\n}\r\n\r\n#root {\r\n\tmargin-left: 4vw;\r\n\tmargin-right: 4vw;\r\n}"]}
