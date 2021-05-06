@@ -1,18 +1,23 @@
-import AntdCheckbox from './components/AntdCheckbox'
 import Header from './components/Header'
-	import List from './components/List'
+import List from './components/RecipesList'
 
-const list = [{text: 'a', link: 'a'}, {text: 'b', link: 'b'}, {text: 'c', link: 'c'}];
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Recipe from './components/Recipe';
 
 const App = () => {
 	return (
 		<>
 			<Header text="Lista Przepisów"/>
-			{/* <AntdList list={list}/> */}
-			{/* {recipe.getIngredients().forEach(ingredient => {
-				<AntdCheckbox text={ingredient} />
-			})}			 */}
-			<List elements={list}/>
+			<Router>
+				<Switch>
+					<Route exact path='/'>
+						<List />
+					</Route>
+					<Route path="/*">
+						<Recipe />
+					</Route>
+				</Switch>
+			</Router>
 		</>
 	);
 }

@@ -2,15 +2,16 @@ import 'antd/dist/antd.css';
 import '../index.css';
 import { List } from 'antd';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'
 
-let placeholder = ['a', 'b', 'c'];
+let placeholder = ['Pascha - Makłowicz', 'b', 'c'];
 
 const RecipesList = () => {
 	const [recipes, setRecipes] = useState([<></>]);
 	const createMenu = () => {
 		const links = placeholder.map(element => {
 			return (
-				<a href={element}>{element}</a>
+				<Link to={{pathname: element}}>{element}</Link>
 			)
 		})
 		setRecipes(links);
