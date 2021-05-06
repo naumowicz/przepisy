@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
 import RecipeInterface from '../interfaces/recipeInterface';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
+import {Button} from 'antd';
+import 'antd/dist/antd.css';
 
 const cakesUrl = `https://raw.githubusercontent.com/naumowicz/przepisy/main/recipes/cakes.json`;
 
@@ -26,6 +28,9 @@ const Recipe = () => {
 	
 	return (
 		<div className="recipe">
+			<Link to='/'>
+				<Button size="large" block>Powrót</Button>
+			</Link>
 			<div>
 				<h1>{recipe.name}</h1>
 			</div>
