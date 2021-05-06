@@ -24,7 +24,7 @@ const Recipe = () => {
 			</div>
 			<div>
 				<h3>Źródło:</h3>
-				<a href={recipe.source}>{recipe.source}</a>
+				<a href={recipe.source} target="_blank">{recipe.source}</a>
 			</div>
 			<div>
 				<h3>Składniki:</h3>
