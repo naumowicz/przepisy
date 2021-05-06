@@ -1,34 +1,41 @@
+import React, { useEffect, useState } from 'react';
 import RecipeInterface from '../interfaces/recipeInterface'
 
-const getRecipe = (name: string): RecipeInterface => {
-	let recipe = {name: '', source: '', ingredients: [''], tools: [''], actions: ['']};
-	fetch('')//fixme
-	.then(res => res.json().then(data => {
-		recipe = data;
-	}))
-	return recipe;
-}
+const url = `https://raw.githubusercontent.com/naumowicz/przepisy/main/recipes/pascha.json`;
 
-const Recipe = ({name}: {name: string}) => {
+const Recipe = () => {
+
+	const [recipe, setRecipe] = useState<RecipeInterface>({name: '', source: '', ingredients: [''], tools: [''], actions: ['']});
+
+	const getRecipe = async () => {
+		const response = await fetch(url);
+		const recipe = await response.json();
+		setRecipe(recipe);
+	}
+
+	useEffect(() => {
+		getRecipe();
+	}, []);
 	
-	const recipe = getRecipe(name)
-
 	return (
-		<div>
+		<div className="recipe">
 			<div>
 				<h1>{recipe.name}</h1>
 			</div>
 			<div>
+				<h3>Źródło:</h3>
 				<a href={recipe.source}>{recipe.source}</a>
 			</div>
 			<div>
+				<h3>Składniki:</h3>
 				<ul>
-					{recipe.ingredients.map(ingredient => {
-					return <li>{ingredient}</li>
+					{recipe.ingredients.map((ingredient, index) => {
+					return <li key={index}>{ingredient}</li>
 					})}
 				</ul>
 			</div>
 			<div>
+				<h3>Narzędzia:</h3>
 				<ul>
 					{recipe.tools.map(tool => {
 						return <li>{tool}</li>
@@ -36,6 +43,7 @@ const Recipe = ({name}: {name: string}) => {
 				</ul>
 			</div>
 			<div>
+				<h3>Przepis:</h3>
 				<ul>
 					{recipe.actions.map(action => {
 						return <li>{action}</li>
@@ -44,6 +52,7 @@ const Recipe = ({name}: {name: string}) => {
 			</div>
 		</div>
 	)
+	
 }
 
 export default Recipe;
