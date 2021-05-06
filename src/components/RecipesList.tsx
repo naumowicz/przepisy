@@ -37,14 +37,12 @@ const RecipesList = () => {
 						<h1>Ładowanie</h1>
 					</div>
 				)
-			break;
 			case isError:
 				return (
 					<div>
 						<h1>Błąd!</h1>
 					</div>
 				)
-				break;
 		default:
 			return (
 				<div>
@@ -63,7 +61,6 @@ const RecipesList = () => {
 					/>
 				</div>
 			)
-			break;
 	}
 }
 
