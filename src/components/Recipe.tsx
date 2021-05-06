@@ -37,16 +37,16 @@ const Recipe = () => {
 			<div>
 				<h3>Narzędzia:</h3>
 				<ul>
-					{recipe.tools.map(tool => {
-						return <li>{tool}</li>
+					{recipe.tools.map((tool, index) => {
+						return <li key={index}>{tool}</li>
 						})}
 				</ul>
 			</div>
 			<div>
 				<h3>Przepis:</h3>
 				<ul>
-					{recipe.actions.map(action => {
-						return <li>{action}</li>
+					{recipe.actions.map((action, index) => {
+						return <li key={index}>{action}</li>
 						})}
 				</ul>
 			</div>
