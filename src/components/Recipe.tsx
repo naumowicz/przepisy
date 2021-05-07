@@ -17,7 +17,7 @@ const tooltip = 'Oceny wystawiane są surowo. 5 gwiazdek oznacza przepis za mili
 const ratingPlaceholder = 2;
 
 const Recipe = () => {
-	let location = decodeURI(useLocation().pathname).replace('/', '');
+	let location = decodeURI(useLocation().pathname).replace('/przepisy/', '').replace('/', '');
 
 	const [recipe, setRecipe] = useState<RecipeInterface>({name: '', source: '', rating: 2, ingredients: [''], tools: [''], actions: ['']});
 
