@@ -1,3 +1,3 @@
 export default interface recipeInterface {
-	name: string; source: string; ingredients: Array<string>; tools: Array<string>; actions: Array<string>
+	name: string; source: string; rating: number, ingredients: Array<string>; tools: Array<string>; actions: Array<string>
 }

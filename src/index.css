@@ -8,6 +8,6 @@ h1 {
 }
 
 #root {
-	margin-left: 4vw;
-	margin-right: 4vw;
+	display: grid;
+	place-items: center;
 }
