@@ -7,7 +7,7 @@ import Recipe from './components/Recipe';
 const App = () => {
 	return (
 		<>
-			<Header text="Lista Przepisów"/>
+			<Header text="Lista przepisów"/>
 			<Router>
 				<Switch>
 					<Route exact path='/'>
