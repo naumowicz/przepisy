@@ -14,12 +14,12 @@ const rating = ['nijakie 😕', 'zwykłe 🙄', 'smaczne 👍', 'dobre 😃', 'G
 
 const tooltip = 'Oceny wystawiane są surowo. 5 gwiazdek oznacza przepis za milion dolarów, natomiast zwykłe można oceniać tak jak schabowe na obiad.'
 
-const placeholder = 2;
+const ratingPlaceholder = 2;
 
 const Recipe = () => {
 	let location = decodeURI(useLocation().pathname).replace('/', '');
 
-	const [recipe, setRecipe] = useState<RecipeInterface>({name: '', source: '', ingredients: [''], tools: [''], actions: ['']});
+	const [recipe, setRecipe] = useState<RecipeInterface>({name: '', source: '', rating: 2, ingredients: [''], tools: [''], actions: ['']});
 
 	const getRecipe = async () => {
 		const response = await fetch(cakesUrl);
@@ -51,8 +51,8 @@ const Recipe = () => {
 			<div>
 				<h3>Ocena</h3>
 				<span>
-					<Rate tooltips={rating} disabled value={placeholder} />
-					{placeholder ? <span className="ant-rate-text">{rating[placeholder - 1]}</span> : ''}
+					<Rate tooltips={rating} disabled value={recipe.rating} />
+					{recipe.rating ? <span className="ant-rate-text">{rating[recipe.rating - 1]}</span> : <span className="ant-rate-text">{rating[ratingPlaceholder - 1]}</span>}
 					<span>
 						<Tooltip
 						title={tooltip}
