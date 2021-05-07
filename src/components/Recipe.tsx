@@ -1,10 +1,20 @@
 import { useEffect, useState } from 'react';
 import RecipeInterface from '../interfaces/recipeInterface';
 import { useLocation, Link } from 'react-router-dom';
-import {Button} from 'antd';
+import { Button, Collapse, Rate, Tooltip } from 'antd';
 import 'antd/dist/antd.css';
+import {InfoCircleTwoTone} from '@ant-design/icons'
+import CheckboxList from './CheckboxList';
+
+const { Panel } = Collapse;
 
 const cakesUrl = `https://raw.githubusercontent.com/naumowicz/przepisy/main/recipes/cakes.json`;
+
+const rating = ['nijakie 😕', 'zwykłe 🙄', 'smaczne 👍', 'dobre 😃', 'Glamour! 😊'];
+
+const tooltip = 'Oceny wystawiane są surowo. 5 gwiazdek oznacza przepis za milion dolarów, natomiast zwykłe można oceniać tak jak schabowe na obiad.'
+
+const placeholder = 2;
 
 const Recipe = () => {
 	let location = decodeURI(useLocation().pathname).replace('/', '');
@@ -39,29 +49,30 @@ const Recipe = () => {
 				<a href={recipe.source} target="_blank" rel="noreferrer">{recipe.source}</a>
 			</div>
 			<div>
-				<h3>Składniki:</h3>
-				<ul>
-					{recipe.ingredients.map((ingredient, index) => {
-					return <li key={index}>{ingredient}</li>
-					})}
-				</ul>
+				<h3>Ocena</h3>
+				<span>
+					<Rate tooltips={rating} disabled value={placeholder} />
+					{placeholder ? <span className="ant-rate-text">{rating[placeholder - 1]}</span> : ''}
+					<span>
+						<Tooltip
+						title={tooltip}
+						>
+							<InfoCircleTwoTone />
+						</Tooltip>
+					</span>
+				</span>
 			</div>
-			<div>
-				<h3>Narzędzia:</h3>
-				<ul>
-					{recipe.tools.map((tool, index) => {
-						return <li key={index}>{tool}</li>
-						})}
-				</ul>
-			</div>
-			<div>
-				<h3>Przepis:</h3>
-				<ul>
-					{recipe.actions.map((action, index) => {
-						return <li key={index}>{action}</li>
-						})}
-				</ul>
-			</div>
+			<Collapse defaultActiveKey={["1", "2", "3"]}>
+				<Panel header="Składniki" key="1">
+					<CheckboxList data={recipe.ingredients}></CheckboxList>
+				</Panel>
+				<Panel header="Narzędzia" key="2">
+					<CheckboxList data={recipe.tools}></CheckboxList>
+				</Panel>
+				<Panel header="Przepis" key="3">
+					<CheckboxList data={recipe.actions}></CheckboxList>
+				</Panel>
+			</Collapse>
 		</div>
 	)
 	
