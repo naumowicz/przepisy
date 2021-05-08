@@ -12,7 +12,7 @@ const cakesUrl = `https://raw.githubusercontent.com/naumowicz/przepisy/main/reci
 
 const rating = ['nijakie 😕', 'zwykłe 🙄', 'smaczne 👍', 'dobre 😃', 'Glamour! 😊'];
 
-const tooltip = 'Oceny wystawiane są surowo. 5 gwiazdek oznacza przepis za milion dolarów, natomiast zwykłe można oceniać tak jak schabowe na obiad.'
+const tooltip = 'Oceny wystawiane są surowo. 5 gwiazdek oznacza przepis za milion dolarów, natomiast 2 gwiazdki (zwykłe) można oceniać tak jak schabowe na obiad.'
 
 const ratingPlaceholder = 2;
 
