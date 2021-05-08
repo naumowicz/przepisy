@@ -16,15 +16,15 @@
     "antd": "^4.15.0",
     "cors": "^2.8.5",
     "eslint-config-react-app": "^6.0.0",
+    "fast-glob": "^3.2.5",
     "gh-pages": "^3.1.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1",
-	"fast-glob": "^3.2.5",
-    "ts-node": "^9.1.1"
+    "web-vitals": "^1.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -33,7 +33,7 @@
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d build",
-    "generate": "ts-node ./src/generateRecipesLists.ts"
+    "generate": "ts-node generateRecipesLists.js"
   },
   "eslintConfig": {
     "extends": [

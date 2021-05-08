@@ -9,11 +9,11 @@ typesOfFood.forEach(type => {
 	//getting all files located in directory with name type of food
 	const recipesTypeList = fg.sync(`./recipes/${type}/*.json`);
 	const url = `https://raw.githubusercontent.com/naumowicz/przepisy/main/recipes/${type}/`;
-	const data: any = {};
+	const data = {};
 
-	recipesTypeList.forEach((recipe: string) => {
+	recipesTypeList.forEach((recipe) => {
 		//accessing recipe
-		const recipeData: {name: string, source: string, rating: number, ingredients: Array<string>, tools: Array<string>, actions: Array<string>} = JSON.parse(fs.readFileSync(recipe).toString());
+		const recipeData = JSON.parse(fs.readFileSync(recipe).toString());
 		//adding to object key and value, key is recipe name, value is url to file on github - main branch
 		data[recipeData.name] = `${url}${path.parse(recipe).name}.json`;
 	});
