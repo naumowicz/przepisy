@@ -45,12 +45,12 @@ const Recipe = () => {
 				<h1>{recipe.name}</h1>
 			</div>
 			<div>
-				<h3>Źródło:</h3>
+				<span>Źródło: </span>
 				<a href={recipe.source} target="_blank" rel="noreferrer">{recipe.source}</a>
 			</div>
 			<div>
-				<h3>Ocena</h3>
 				<span>
+					<span>Ocena: </span>
 					<Rate tooltips={rating} disabled value={recipe.rating} />
 					{recipe.rating ? <span className="ant-rate-text">{rating[recipe.rating - 1]}</span> : <span className="ant-rate-text">{rating[ratingPlaceholder - 1]}</span>}
 					<span>
