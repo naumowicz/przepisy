@@ -1,0 +1,29 @@
+{
+	"name": "Mus czekoladowy - Sugarlady",
+	"source": "https://www.youtube.com/watch?v=WxW4gtBymU4",
+	"rating": 5,
+	"ingredients": [
+		"100g gorzkiej czekolady",
+		"50g mleka",
+		"2 białka",
+		"1 zółtko",
+		"łyżka cukru"
+	],
+	"tools": [
+		"garnek",
+		"miska",
+		"szpatułka",
+		"rózga",
+		"mikser"
+	],
+	"actions": [
+		"Połamać tabliczkę czekolady na drobne kawałki i umieścić w misce.",
+		"Wlać mleko do miski i rozpuścić w kąpieli wodnej.",
+		"Do rozpuszczonej czekolady dodać zółtko i wymieszać.",
+		"Odstawić czekoladę do ostudzenia.",
+		"Ubić 2 białka i łyżkę cukru w mikserze.",
+		"Dodać do ostudzonej czekolady połowę białek i wymieszać rózgą.",
+		"Dodać pozostałą część białka i szpatułką delikatnie wymieszać.",
+		"Przelać mus i udekorować według uznania, bądź wykorzystać w innym celu."		
+	]
+}
