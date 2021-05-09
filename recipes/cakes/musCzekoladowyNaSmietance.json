@@ -1,0 +1,22 @@
+{
+	"name": "Mus czekoladowy na śmietance - Sugarlady",
+	"source": "https://www.youtube.com/watch?v=e8Erx37s3-g",
+	"rating": 5,
+	"ingredients": [
+		"100g gorzkiej czekolady",
+		"200g śmietanki 30%"
+	],
+	"tools": [
+		"garnek",
+		"miska",
+		"szpatułka",
+		"mikser"
+	],
+	"actions": [
+		"Połamać tabliczkę czekolady na drobne kawałki i umieścić w misce.",
+		"Podgrzać śmietankę w garnku do momentu uzyskania bąbelków przy brzegu garnka.",
+		"Przelać śmietankę do miski z czekoladą, poczekać aż temperatura czekolady i śmietanki wyrówna się.",
+		"Wymieszać ganache szpatułką i ostudzić.",
+		"Ubić śmietanę kremówkę w mikserze i dodać do ganache."
+	]
+}

@@ -1,0 +1,26 @@
+{
+	"name": "Ganache do tarty czekoladowej - Sugarlady",
+	"source": "https://www.youtube.com/watch?v=hQJnoWVp8Qg",
+	"rating": 4,
+	"ingredients": [
+		"200g mlecznej czekolady",
+		"200g gorzkiej czekolady",
+		"300ml śmietanki 30%",
+		"50g masła",
+		"30 ml Baileys (można pominąć)"
+	],
+	"tools": [
+		"garnek",
+		"miska",
+		"szpatułka"
+	],
+	"actions": [
+		"Połamać tabliczkę czekolady na drobne kawałki i umieścić w misce.",
+		"Podgrzać śmietankę w garnku do momentu uzyskania bąbelków przy brzegu garnka.",
+		"Przelać śmietankę do miski z czekoladą, poczekać aż temperatura czekolady i śmietanki wyrówna się.",
+		"Wymieszać ganache szpatułką.",
+		"Dodać masło i wymieszać.",
+		"Powoli dodawać likier ciągle mieszając.",
+		"Wylać na schłodzony spód tarty i wstawić do lodówki."
+	]
+}
