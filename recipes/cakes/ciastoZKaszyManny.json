@@ -1,0 +1,24 @@
+{
+	"name": "Ciasto z kaszy manny",
+	"source": "https://przepiski.pl/ciasto-z-kaszy-manny/",
+	"rating": 2,
+	"ingredients": [
+		"1000 ml mleka 2%",
+		"200 g masła",
+		"1 szklanka kaszy manny (to chyba za dużo, lepiej dać filiżankę)",
+		"1 duża paczka herbatników",
+		"3/4 szklanki cukru",
+		"1 cukier wanilinowy"
+	],
+	"tools": [
+		"garnek",
+		"szpatuła lub łyżka"
+	],
+	"actions": [
+		"Do garnka wlać mleko, dodać cukier, masło i gotować do rozpuszczenia.",
+		"Kiedy składniki się rozpuszczą dodać kaszę manną, mieszać do momentu aż kasza zgęstnieje.",
+		"Formę o wymiarach 24×24 cm wyłożyć papierem do pieczenia. Na spód ułożyć warstwę herbatników.",
+		"Na herbatniki wyłożyć masę z kaszy manny. Na wierzch ułożyć warstwę herbatników.",
+		"Ciasto wstawić do lodówki, najlepiej na całą noc."
+	]
+}

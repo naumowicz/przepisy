@@ -1,0 +1,37 @@
+{
+	"name": "Ciasto z owocami - Strzelczyk",
+	"source": "https://www.youtube.com/watch?v=COPMFbAk8Dg",
+	"rating": 2,
+	"ingredients": [
+		"300 g mąki pszennej",
+		"400 g rabarbaru (lub inne owoce)",
+		"3 jajka",
+		"150 g cukru",
+		"12 g cukru z wanilią",
+		"150 g jogurtu naturalnego",
+		"140 g oleju",
+		"1 łyżeczkę proszku do pieczenia",
+		"1 łyżeczkę sody",
+		"1 łyżka maki ziemniaczanej",
+		"110 g masła na KRUSZONKĘ",
+		"150 g mąki na KRUSZONKĘ",
+		"50 g cukru pudru na KRUSZONKĘ"
+	],
+	"tools": [
+		"2 miski",
+		"mikser",
+		"blacha"
+	],
+	"actions": [
+		"Przepis można by dopracować!",
+		"Do zrobienia kruszonki: do miski dodać cukier puder, mąkę, masło i wymieszać do uzyskania jednolitej masy, odstawić.",
+		"Wbić do miski miksera jajka i ubić z cukrem.",
+		"Stopniowo dodawać mąkę ciągle mieszając.",
+		"Dodać jogurt, olej, proszek do pieczenia, sodę, mąkę ziemniaczaną ciągle mieszając.",
+		"Wyłożyć ciasto na blachę.",
+		"Pokroić wybrane owoce, nie przekraczając wskazanej ilości, inaczej wyjdzie zakalec.",
+		"Równomiernie wyłożyć owoce na ciasto.",
+		"Pokryć ciasto kruszonką.",
+		"Piec w temperaturze 170 stopni, 50 minut. Piec należy tak długo, aż wykałaczka wbita w ciasto będzie sucha."
+	]
+}
