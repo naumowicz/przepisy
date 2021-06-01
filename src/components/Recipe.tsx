@@ -8,7 +8,7 @@ import CheckboxList from './CheckboxList';
 
 const { Panel } = Collapse;
 
-const cakesUrl = `https://raw.githubusercontent.com/naumowicz/przepisy/main/recipes/cakes.json`;
+const url = ['https://raw.githubusercontent.com/naumowicz/przepisy/main/recipes/', '.json'];
 
 const rating = ['nijakie 😕', 'zwykłe 🙄', 'smaczne 👍', 'dobre 😃', 'Glamour! 😊'];
 
@@ -18,18 +18,24 @@ const ratingPlaceholder = 2;
 
 const Recipe = () => {
 	let location = decodeURI(useLocation().pathname).replace('/przepisy/', '').replace('/', '');
+	const regex = /#[a-z]+\+/;
+	const recipeType = regex.exec(location);
+	const recipeName = location.replace(regex, '');
 
 	const [recipe, setRecipe] = useState<RecipeInterface>({name: '', source: '', rating: 2, ingredients: [''], tools: [''], actions: ['']});
 
 	const getRecipe = async () => {
-		const response = await fetch(cakesUrl);
-		const cakesList = await response.json();
-		Object.keys(cakesList).forEach(async cake => {
-			if (cake === location) {
-				const response = await fetch(cakesList[cake]);
-				setRecipe(await response.json());
-			}
-		});		
+		
+		if(recipeType !== null) {
+			const response = await fetch(`${url[0]}${recipeType[0].toString().replace(/(#|\+)/g, '')}${url[1]}`);
+			const recipesList = await response.json();
+			Object.keys(recipesList).forEach(async name => {
+				if (name === recipeName) {
+					const response = await fetch(recipesList[name]);
+					setRecipe(await response.json());
+				}
+			});	
+		}			
 	}
 
 	useEffect(() => {
