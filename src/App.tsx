@@ -1,5 +1,5 @@
 import Header from './components/Header'
-import List from './components/RecipesList'
+import RecipesTypes from './components/RecipesTypes'
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Recipe from './components/Recipe';
@@ -11,10 +11,10 @@ const App = () => {
 			<Router>
 				<Switch>
 					<Route exact path='/'>
-						<List />
+						<RecipesTypes />
 					</Route>
 					<Route exact path='/przepisy'>
-						<List />
+						<RecipesTypes />
 					</Route>
 					<Route path="/*">
 						<Recipe />

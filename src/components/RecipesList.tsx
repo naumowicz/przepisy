@@ -4,10 +4,10 @@ import { List } from 'antd';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 
-const cakesList = 'https://raw.githubusercontent.com/naumowicz/przepisy/main/recipes/cakes.json'
+const linkToRecipesList = ['https://raw.githubusercontent.com/naumowicz/przepisy/main/recipes/', '.json'];
 
-const RecipesList = () => {
-	let cakesListElements: Array<string> = [];
+const RecipesList = ({recipeType}: {recipeType: string}) => {
+	let elementsOfRecipesList: Array<string> = [];
 
 	const [recipes, setRecipes] = useState<Array<string>>([]);
 	const [isLoading, setIsLoading] = useState(true);
@@ -18,11 +18,11 @@ const RecipesList = () => {
 	}, [])
 
 	const getRecipesLinks = async () => {
-		fetch(cakesList)
+		fetch(`${linkToRecipesList[0]}${recipeType}${linkToRecipesList[1]}`)
 		.then(async (cakesLinks) => {
 			setIsLoading(false);			
-			cakesListElements = Object.keys(await cakesLinks.json());
-			setRecipes(cakesListElements);
+			elementsOfRecipesList = Object.keys(await cakesLinks.json());
+			setRecipes(elementsOfRecipesList);
 		})
 		.catch(error => {
 			setIsError(true);
