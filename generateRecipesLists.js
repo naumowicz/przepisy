@@ -1,9 +1,8 @@
 const fg = require('fast-glob');
-// const fs = require('fs');
 const fs = require('fs');
 const path = require('path');
 
-const typesOfFood = ['cakes'];
+const typesOfFood = ['cakes', 'desserts'];
 
 typesOfFood.forEach(type => {
 	//getting all files located in directory with name type of food
@@ -18,5 +17,5 @@ typesOfFood.forEach(type => {
 		data[recipeData.name] = `${url}${path.parse(recipe).name}.json`;
 	});
 
-	fs.writeFileSync(`./recipes/${typesOfFood}.json`, JSON.stringify(data));
+	fs.writeFileSync(`./recipes/${type}.json`, JSON.stringify(data));
 });
