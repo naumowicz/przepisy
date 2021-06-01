@@ -50,7 +50,7 @@ const RecipesList = ({recipeType}: {recipeType: string}) => {
 					bordered
 					dataSource={recipes.map((recipeName) => {
 						return (
-							<Link to={{pathname: recipeName}}>{recipeName}</Link>
+							<Link to={{pathname: `#${recipeType}+${recipeName}`}}>{recipeName}</Link>
 						)
 					})}
 					renderItem={item => (
