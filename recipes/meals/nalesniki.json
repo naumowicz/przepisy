@@ -1,0 +1,24 @@
+{
+	"name": "Naleśniki",
+	"source": "https://www.nalesniki.eu/przepis-na-nalesniki/",
+	"rating": 2,
+	"ingredients": [
+		"1,5 szklanki mąki",
+		"1 szklanka mleka",
+		"1 szklanka wody",
+		"2 jaja",
+		"1 szczypta soli",
+		"1 łyżeczka cukru waniliowego"
+	],
+	"tools": [
+		"miska",
+		"mikser",
+		"chochla",
+		"patelnia"
+	],
+	"actions": [
+		"Dodać wszystkie składniki do miski.",
+		"Wymieszać dokładnie do uzyskania gładkiej masy",
+		"Usmażyć naleśniki na patelni, gdy naleśniki będą się przyklejać można dodać odrobinę oleju."
+	]
+}

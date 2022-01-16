@@ -2,7 +2,7 @@ const fg = require('fast-glob');
 const fs = require('fs');
 const path = require('path');
 
-const typesOfFood = ['cakes', 'desserts'];
+const typesOfFood = ['cakes', 'desserts','meals'];
 
 typesOfFood.forEach(type => {
 	//getting all files located in directory with name type of food

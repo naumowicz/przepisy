@@ -1,0 +1,31 @@
+{
+	"name": "Spaghetti Carbonara",
+	"source": "https://www.youtube.com/watch?v=tUzFwKbVzvw",
+	"rating": 4,
+	"ingredients": [
+		"makaron",
+		"150 g pancetty (lub inny boczek)",
+		"jajka – 3 żółtka i 3 całe jajka",
+		"140 g parmezanu lub pecorino",
+		"pieprz"
+	],
+	"tools": [
+		"tarka do starcia sera",
+		"sitko do odcedzenia makaronu",
+		"patelnia"
+	],
+	"actions": [
+		"Zetrzeć parmezan.",
+		"Pokroić boczek.",
+		"Rozpocząć gotowanie makaronu.",
+		"Przełożyć boczek na patelnię i smażyć na wolnym ogniu.",
+		"Do miski dodać 3 żółtka i 3 całe jajka.",
+		"Gdy makaron się ugotuje dodać do żółtek 3 łyżki wody z makaronu i wymieszać.",
+		"Dodać połowę startego sera do miski.",
+		"Dodać świeżo zmielony pieprz do miski i wymieszać.",
+		"Wyłączyć ogień pod usmażonym boczekiem.",
+		"Przełożyć makaron na patelnię.",
+		"Upewniając się, że sos nie zetnie się na zbyt gorącej patelni, przelać do makaronu i boczku.",
+		"Wymieszać i podać spaghetti po zcięciu się sosu."
+	]
+}
