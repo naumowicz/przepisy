@@ -1,7 +1,7 @@
 import RecipesList from './RecipesList';
 
-const typesOfRecipes = ['cakes', 'desserts'];
-const translation = ['Ciasta', 'Desery'];
+const typesOfRecipes = ['cakes', 'desserts', 'meals'];
+const translation = ['Ciasta', 'Desery', 'Posiłki'];
 
 const RecipesTypes = () => {
 	return (
